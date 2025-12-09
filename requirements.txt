@@ -1,0 +1,4 @@
+nnodely==1.5.2
+ipykernel
+pandas
+jupyter

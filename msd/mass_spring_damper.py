@@ -44,13 +44,13 @@ param_model = {'num_of_epochs' : 80,
           'train_batch_size' : 128,
           'lr' : 0.0005,
           'splits' : [70,20,10]}
-msd.trainAndAnalyze(training_params = param_model) #TODO replace with -> msd.trainModel(training_params = param_model)
+msd.trainModel(training_params = param_model)
 
 # Save the neural model in json format
 msd.saveModel(name = 'msd_preliminary')
 
 # Show the network performance on the test dataset
-#TODO add this command -> msd.analyzeModel(splits = [70,20,10])
+msd.analyzeModel(splits = [70,20,10])
 vis = MPLVisualizer()
 vis.setModely(msd)
 vis.showResult("simulations_test")
